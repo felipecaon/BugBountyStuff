@@ -1,2 +1,1 @@
-# BugBountyStuff
-Stuff for bug bounty 
+Things that I used when hunting 

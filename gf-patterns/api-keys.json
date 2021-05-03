@@ -1,0 +1,80 @@
+{
+    "flags": "-haroE",
+    "patterns": [
+        "([^A-Z0-9]|^)(AKIA|A3T|AGPA|AIDA|AROA|AIPA|ANPA|ANVA|ASIA)[A-Z0-9]{12,}",
+	"AIza[0-9A-Za-z_-]{35}",
+	"AAAA[A-Za-z0-9_-]{7}:[A-Za-z0-9_-]{140}",
+	"6L[0-9A-Za-z_-]{38}|^6[0-9a-zA-Z_-]{39}$",
+	"ya29\\.[0-9A-Za-z_-]+",
+	"amzn\\.mws\\.[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}",
+	"s3\\.amazonaws\\.com[/]+|[a-zA-Z0-9_\\.\\-]*\\.s3\\.amazonaws\\.com|s3(://|-)[a-zA-Z0-9._-]+|s3\\.amazonaws.com/[a-zA-Z0-9\\._-]+|s3\\.console\\.aws\\.amazon\\.com/s3/buckets/[a-zA-Z0-9\\._-]+",
+	"EAACEdEose0cBA[0-9A-Za-z]+",
+	"([bB]asic|[bB]earer) [a-zA-Z0-9=:_+/-]{5,100}",
+	"api[key|_key|s+]+[a-zA-Z0-9_,-]{5,100}",
+	"key-[0-9a-zA-Z]{32}",
+	"SK[0-9a-fA-F]{32}",
+	"AC[a-zA-Z0-9_-]{32}",
+	"AP[a-zA-Z0-9_-]{32}",
+	"access_token\\$production\\$[0-9a-z]{16}\\$[0-9a-f]{32}",
+	"sq0csp-[ 0-9A-Za-z_-]{43}|sq0[a-z]{3}-[0-9A-Za-z_-]{22,43}",
+	"sqOatp-[0-9A-Za-z_-]{22}|EAAA[a-zA-Z0-9]{60}",
+	"sk_live_[0-9a-zA-Z]{24}",
+	"rk_live_[0-9a-zA-Z]{24}",
+	"[a-zA-Z0-9_-]*:[a-zA-Z0-9_-]+@github\\.com*",
+	"-----BEGIN RSA PRIVATE KEY-----",
+	"-----BEGIN DSA PRIVATE KEY-----",
+	"-----BEGIN EC PRIVATE KEY------",
+	"-----BEGIN PGP PRIVATE KEY BLOCK-----",
+	"ey[A-Za-z0-9_=-]+\\.[A-Za-z0-9_=-]+\\.?[A-Za-z0-9_.+/=-]*$",
+	"xox[a-zA-Z]-[a-zA-Z0-9-]+",
+	"([-]+BEGIN [^\\s]+ PRIVATE KEY[-]+[\\s]*[^-]*[-]+END [^\\s]+ PRIVATE KEY[-]+)",
+	"[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}",
+	"vtex-api-(appkey|apptoken)",
+	"-----BEGIN OPENSSH PRIVATE KEY-----",
+	"https://hooks.slack.com/services/T[a-zA-Z0-9_]{8}/B[a-zA-Z0-9_]{8}/[a-zA-Z0-9_]{24}",
+	"slack-corp",
+	"[g|G][i|I][t|T][h|H][u|U][b|B].{0,30}['\"\\s][0-9a-zA-Z]{35,40}['\"\\s]",
+	"[t|T][w|W][i|I][t|T][t|T][e|E][r|R].{0,30}['\"\\s][0-9a-zA-Z]{35,44}['\"\\s]",
+	"[f|F][a|A][c|C][e|E][b|B][o|O][o|O][k|K].{0,30}['\"\\s][0-9a-f]{32}['\"\\s]",
+	"55[0-9a-fA-F]{32}",
+	"[0-9a-fA-F]{7}.[0-9a-fA-F]{32}"
+]
+}
+
+#1 AWS
+#2 google services
+#3 firebase
+#4 google_captcha
+#5 google_oauth
+#6 amazon_aws_auth_token
+#7 amazon_aws_url
+#8 facebook_access_token
+#9 authorization basic and bearer
+#10 authorization_api
+#11 mailgun_api_key
+#12 twilio_api_key
+#13 twilio_account_sid
+#14 twilio_app_sid
+#15 paypal_braintree_access_token
+#16 square_oauth_secret
+#17 square_access_token
+#18 stripe_standard_api
+#19 stripe_restricted_api
+#20 github_access_token
+#21 rsa_private_key
+#22 ssh_dsa_private_key
+#23 ssh_dc_private_key
+#24 pgp_private_block
+#25 json_web_token
+#27 slack_token
+#28 SSH_privKey
+#29 Heroku API KEY
+#30 vtex-api
+#31 ssh key
+#32 slack webhook
+#33 slack internal
+#34 github
+#35 twitter ouath
+#36 facebook oauth
+#37 twilio
+#38 instagram
