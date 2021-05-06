@@ -1,0 +1,4 @@
+{
+    "flags": "-iE",
+    "pattern": "(\\.pdf|\\.swf|\\.txt|\\.conf|\\.xml|\\.php|\\.sql|\\.doc|\\.ppt|\\.json|\\.action|\\.bak|\\.backup|\\.bkf|\\.bkp|\\.bok|\\.config|\\.crt|\\.cst|\\.csv|\\.dat|\\.eml|\\.env|\\.exe|\\.ini|\\.inf|\\.java|\\.key|\\.log|\\.lst|\\.passwd|\\.pem|\\.pgb|\\.pwd|\\.rdp|\\.yml)"
+}
