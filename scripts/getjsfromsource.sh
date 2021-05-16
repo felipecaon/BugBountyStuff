@@ -21,7 +21,6 @@ sed -i 's/\/\//\//gi' $WITHOUT_HTTP
 sed -i 's/\/\//\//gi' $WITHOUT_HTTP
 
 cat $WITHOUT_HTTP | httpx -silent | anew $JS_FILES
-#wget -i $JS_FILES -P jsfiles
 cat $JS_FILES | fff -S -o jsfiles
 
 rm $RELATIVE_JS_FILES
