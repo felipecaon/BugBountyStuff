@@ -32,8 +32,7 @@ wpscan
 eyewitness
 
 [ param discovery ]
-ParamSpider
-Arjun
+x8
 
 [ cve, misconfig, exposures, open redirect and everthing ]
 nuclei w/ nuclei_templates
@@ -60,3 +59,7 @@ arjun-param-list
 
 [ still need validation ]
 https://github.com/Raywando/degoogle
+
+[ considerations ]
+> arjun list is nice to use in x8
+> paramspider fecthes results from webarchive, it overlaps gau, it's way better to just gau and grep for "="
