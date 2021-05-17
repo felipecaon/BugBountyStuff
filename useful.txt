@@ -1,23 +1,60 @@
+[ general ]
 anew
 gf
-httpx
-fff
-ffuf
-gauplus
 html-tool
-subfinder
-assetfinder
-amass
-finddomain
-githubsubdomains
-wpscan
-eyewitness
-subjack
-dalfox
 qsrplace
 gxss
-anti-burl
-dnsgen
+4xxbypass
+gmapsapiscanner
+
+[ validate url over 80 and 443 ]
+httpx
+
+[ download content ]
+fff
+
+[ brute dirs and files ]
+ffuf
+
+[ get old stuff ]
+gauplus
+
+[ subdomain enumeration ]
+subfinder
+assetfinder
+finddomain
+githubsubdomains
+
+[ CMS scanner ]
+wpscan
+
+[ screenshot taking ]
+eyewitness
+
+[ param discovery ]
+ParamSpider
+Arjun
+
+[ cve, misconfig, exposures, open redirect and everthing ]
+nuclei w/ nuclei_templates
+
+[ XSS ]
+dalfox
+
+[ dns discovery ]
 massdns
+puredns
+dnsgen
+
+[ bucket vulns ]
 S3Scanner
+
+[ wordlists ]
 https://wordlists.assetnote.io/
+seclists - raft
+leakypaths
+oneforall
+jhaddix all
+
+[ still need validation ]
+https://github.com/Raywando/degoogle
