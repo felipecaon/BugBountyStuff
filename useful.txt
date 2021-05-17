@@ -45,6 +45,9 @@ massdns
 puredns
 dnsgen
 
+[ port discovery]
+nmap
+
 [ bucket vulns ]
 S3Scanner
 
