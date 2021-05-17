@@ -55,6 +55,8 @@ seclists - raft
 leakypaths
 oneforall
 jhaddix all
+special-chars
+arjun-param-list
 
 [ still need validation ]
 https://github.com/Raywando/degoogle
