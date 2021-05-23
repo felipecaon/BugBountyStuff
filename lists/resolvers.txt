@@ -1,5 +1,0 @@
-# https://github.com/proabiral/Fresh-Resolvers/blob/master/resolvers.txt
-# https://github.com/BonJarber/fresh-resolvers/blob/main/resolvers.txt
-# https://github.com/janmasarik/resolvers/blob/master/resolvers.txt
-
-# first and second lists will give a lot of false positives, third list is decent

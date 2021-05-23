@@ -1,0 +1,2 @@
+go to https://github.com/janmasarik/resolvers/blob/master/resolvers.txt
+

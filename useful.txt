@@ -58,14 +58,6 @@ aem-hacker [you should look and learn aem exploting, this is pure gold]
 [ existing exploits ]
 searchsploit
 
-[ wordlists ]
-https://wordlists.assetnote.io/ - 2m-subdomains, httpdirs
-seclists - dirb, robotstopnotallowed, burparams, raft, reverse-proxy-inscositences, bo0om
-leakypaths
-jhaddix all for DNS discovery
-special-chars
-arjun-param-list
-
 [ still need validation ]
 https://github.com/Raywando/degoogle
 https://github.com/ahmetgurel/weapons4pentester (has loads of testable images but no information on how to use for some cases)
