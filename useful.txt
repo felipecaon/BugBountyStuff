@@ -4,7 +4,7 @@ gf
 html-tool
 qsrplace
 gxss
-4xxbypass
+403bypass
 gmapsapiscanner
 
 [ validate url over 80 and 443 ]
@@ -20,13 +20,14 @@ ffuf
 gauplus
 
 [ subdomain enumeration ]
-subfinder
+subfinder (set up keys here)
 assetfinder
 finddomain
 githubsubdomains
 
 [ CMS scanner ]
 wpscan
+joomscan
 
 [ screenshot taking ]
 eyewitness
@@ -51,18 +52,25 @@ nmap
 [ bucket vulns ]
 S3Scanner
 
+[ aem ]
+aem-hacker [you should look and learn aem exploting, this is pure gold]
+
+[ existing exploits ]
+searchsploit
+
 [ wordlists ]
-https://wordlists.assetnote.io/
-seclists - raft
+https://wordlists.assetnote.io/ - 2m-subdomains, httpdirs
+seclists - dirb, robotstopnotallowed, burparams, raft, reverse-proxy-inscositences, bo0om
 leakypaths
-oneforall
-jhaddix all
+jhaddix all for DNS discovery
 special-chars
 arjun-param-list
 
 [ still need validation ]
 https://github.com/Raywando/degoogle
+https://github.com/ahmetgurel/weapons4pentester (has loads of testable images but no information on how to use for some cases)
+https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/Upload%20Insecure%20Files (alternative for above)
 
 [ considerations ]
-> arjun list is nice to use in x8
-> paramspider fecthes results from webarchive, it overlaps gau, it's way better to just gau and grep for "="
+> arjun list/burp params from seclists are nice to use in x8
+> paramspider fetches results from webarchive, overlapping results, get gau[plus] and grep for "="
