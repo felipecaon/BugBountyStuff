@@ -10,11 +10,8 @@
 	"s3\\.amazonaws\\.com[/]+|[a-zA-Z0-9_\\.\\-]*\\.s3\\.amazonaws\\.com|s3(://|-)[a-zA-Z0-9._\\-]+|s3\\.amazonaws.com/[a-zA-Z0-9\\._\\-]+|s3\\.console\\.aws\\.amazon\\.com/s3/buckets/[a-zA-Z0-9\\._\\-]+",
 	"EAACEdEose0cBA[0-9A-Za-z]+",
 	"([bB]asic|[bB]earer) [a-zA-Z0-9=:_+/\\-]{5,100}",
-	"api[key|_key|\\s+]+[a-zA-Z0-9_,\\-]{5,100}",
+	"api(key|_key|\\s)+[a-zA-Z0-9_,\\-]{5,100}",
 	"key-[0-9a-zA-Z]{32}",
-	"SK[0-9a-fA-F]{32}",
-	"AC[a-zA-Z0-9_\\-]{32}",
-	"AP[a-zA-Z0-9_\\-]{32}",
 	"access_token\\$production\\$[0-9a-z]{16}\\$[0-9a-f]{32}",
 	"sq0csp-[ 0-9A-Za-z_\\-]{43}|sq0[a-z]{3}-[0-9A-Za-z_\\-]{22,43}",
 	"sqOatp-[0-9A-Za-z_\\-]{22}|EAAA[a-zA-Z0-9]{60}",
@@ -58,35 +55,32 @@
 #9 authorization basic and bearer
 #10 authorization_api
 #11 mailgun_api_key
-#12 twilio_api_key
-#13 twilio_account_sid
-#14 twilio_app_sid
-#15 paypal_braintree_access_token
-#16 square_oauth_secret
-#17 square_access_token
-#18 stripe_standard_api
-#19 stripe_restricted_api
-#20 github_access_token
-#21 rsa_private_key
-#22 ssh_dsa_private_key
-#23 ssh_dc_private_key
-#24 pgp_private_block
-#25 json_web_token
-#27 slack_token
-#28 SSH_privKey
-#29 vtex-api
-#30 ssh key
-#31 slack webhook
-#32 slack internal
-#33 github
-#34 twitter ouath
-#35 facebook oauth
-#36 instagram
-#37 cloudinary
-#38 facebook client id
-#39 google cloud key
-#40 google oath
-#41 heroku
-#42 linkedin
-#43 mailchamp
-#44 picatic
+#12 paypal_braintree_access_token
+#13 square_oauth_secret
+#14 square_access_token
+#15 stripe_standard_api
+#16 stripe_restricted_api
+#17 github_access_token
+#18 rsa_private_key
+#19 ssh_dsa_private_key
+#20 ssh_dc_private_key
+#21 pgp_private_block
+#22 json_web_token
+#23 slack_token
+#24 SSH_privKey
+#25 vtex-api
+#26 ssh key
+#27 slack webhook
+#28 slack internal
+#29 github
+#30 twitter ouath
+#31 facebook oauth
+#32 instagram
+#33 cloudinary
+#34 facebook client id
+#35 google cloud key
+#36 google oath
+#37 heroku
+#38 linkedin
+#39 mailchamp
+#40 picatic
