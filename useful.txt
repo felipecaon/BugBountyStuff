@@ -6,6 +6,7 @@ qsrplace
 gxss
 403bypass
 gmapsapiscanner
+nuclei
 
 [ validate url over 80 and 443 ]
 httpx
@@ -35,9 +36,6 @@ eyewitness
 [ param discovery ]
 x8
 
-[ cve, misconfig, exposures, open redirect and everthing ]
-nuclei w/ nuclei_templates
-
 [ XSS ]
 dalfox
 
@@ -59,9 +57,11 @@ aem-hacker [you should look and learn aem exploting, this is pure gold]
 searchsploit
 
 [ still need validation ]
-https://github.com/Raywando/degoogle
 https://github.com/ahmetgurel/weapons4pentester (has loads of testable images but no information on how to use for some cases)
 https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/Upload%20Insecure%20Files (alternative for above)
+
+[ misc ]
+https://github.com/xm1k3/cent
 
 [ considerations ]
 > arjun list/burp params from seclists are nice to use in x8
