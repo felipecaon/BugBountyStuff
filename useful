@@ -21,9 +21,7 @@ ffuf
 gauplus
 
 [ subdomain enumeration ]
-subfinder (set up keys here)
-assetfinder
-finddomain
+subfinder (set up keys here, grab security trails free)
 githubsubdomains
 
 [ CMS scanner ]
@@ -35,13 +33,13 @@ eyewitness
 
 [ param discovery ]
 x8
+paraminer burp
 
 [ XSS ]
 dalfox
 
 [ dns discovery ]
-massdns
-puredns
+puredns (masscan with wildcard support)
 dnsgen
 
 [ port discovery]
@@ -55,13 +53,6 @@ aem-hacker [you should look and learn aem exploting, this is pure gold]
 
 [ existing exploits ]
 searchsploit
-
-[ still need validation ]
-https://github.com/ahmetgurel/weapons4pentester (has loads of testable images but no information on how to use for some cases)
-https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/Upload%20Insecure%20Files (alternative for above)
-
-[ misc ]
-https://github.com/xm1k3/cent
 
 [ considerations ]
 > arjun list/burp params from seclists are nice to use in x8

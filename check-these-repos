@@ -1,0 +1,11 @@
+# lots of payloads
+https://github.com/sh377c0d3/Payloads
+
+# Malicious files to upload
+## Highly recommended to learn how to use/why to use
+https://github.com/ahmetgurel/weapons4pentester (has loads of testable images but no information on how to use for some>
+https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/Upload%20Insecure%20Files (alternative for above)
+
+#community made nuclei templates that are not in main nuclei branch
+https://github.com/xm1k3/cent
+
