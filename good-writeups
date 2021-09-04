@@ -7,3 +7,5 @@ https://medium.com/@win3zz/how-i-made-31500-by-submitting-a-bug-to-facebook-d31b
 # classic AEM exploitation
 https://medium.com/@SecTech/adobe-experience-manager-exploitation-24bd9eb75ed9
 
+#configure burp to look for ssrfs
+https://dant0x65.medium.com/bug-bounty-tip-automating-ssrf-ea344ec59962
