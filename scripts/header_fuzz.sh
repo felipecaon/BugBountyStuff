@@ -1,4 +1,4 @@
-# interlace -tL ~/domain_list -threads 30 -c "./path_fuzz.sh _target_ wordlist_file"
+# interlace -tL ~/domain_list -threads 30 -c "./header_fuzz.sh _target_"
 
 counter=0
 if [ "$counter" != 1 ]
@@ -9,8 +9,8 @@ fi
 
 base=$(echo $1 | sed 's/http:\/\///g' | sed 's/https:\/\///g')
 
-ffuf -u $1/FUZZ -fw 0 -fs 0,1 -ac -mc 200 -w $2 -of json -o "paths/$base"
+ffuf -u $1 -w "~/wordlists/headers" -H "FUZZ: 127.0.0.1" -fw 0 -fs 0,1 -ac -mc 200,301,302 -w $2 -of json -o "headers/$base"
 
-cat "paths/$base" | jq '.results[].url' >> "paths/${base}_found"
+cat "headers/$base" | jq '.results[].url' >> "headers/${base}_found"
 
-rm "paths/$base"
+rm "headers/$base"
