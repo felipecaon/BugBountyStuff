@@ -1,6 +1,10 @@
 # lots of payloads
 https://github.com/sh377c0d3/Payloads
 
+#concepts
+https://github.com/daffainfo/AllAboutBugBounty
+https://resources.harshbothra.tech/
+
 # Malicious files to upload
 ## Highly recommended to learn how to use/why to use
 https://github.com/ahmetgurel/weapons4pentester (has loads of testable images but no information on how to use for some>
@@ -9,3 +13,11 @@ https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/Upload%20Insecur
 #community made nuclei templates that are not in main nuclei branch
 https://github.com/xm1k3/cent
 
+#workflows
+https://securityflow.io/wp-content/uploads/2021/09/AppSec-Orginal.png?v=1
+
+#wordlists less wordy
+https://github.com/decal/werdlists
+
+#blogs
+https://www.hacking8.com/
