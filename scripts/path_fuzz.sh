@@ -7,7 +7,7 @@ then
         mkdir -p paths
 fi
 
-base=$(echo $1 | sed 's/http:\/\///g' | sed 's/https:\/\///g')
+base=$(echo $1 | sed 's/http:\/\///g' | sed 's/https:\/\///g' | sed 's/\///g')
 
 ffuf -u $1/FUZZ -fw 0 -fs 0,1 -ac -mc 200 -w $2 -of json -o "paths/$base"
 

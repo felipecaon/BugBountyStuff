@@ -7,10 +7,7 @@ then
 	mkdir -p params
 fi
 
-base=$(echo $1 | sed 's/http:\/\///g' | sed 's/https:\/\///g')
+base=$(echo $1 | sed 's/http:\/\///g' | sed 's/https:\/\///g' | sed 's/\///g')
 
 x8 -u $1 -w "~/wordlists/params" -O url -o "params/$base"
 
-cat "params/$base" | grep "?" | tee -a "foundparams"
-
-rm "params/$base"
