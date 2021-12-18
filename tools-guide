@@ -57,3 +57,9 @@ searchsploit
 [ considerations ]
 > arjun list/burp params from seclists are nice to use in x8
 > paramspider fetches results from webarchive, overlapping results, get gau[plus] and grep for "="
+
+
+[ extra ]
+
+https://github.com/vodafon/bruteservice
+https://github.com/vodafon/waybackrobots
