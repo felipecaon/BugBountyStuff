@@ -27,6 +27,7 @@ githubsubdomains
 [ CMS scanner ]
 wpscan
 joomscan
+cmsSkeek
 
 [ screenshot taking ]
 eyewitness
@@ -37,6 +38,15 @@ paraminer burp
 
 [ XSS ]
 dalfox
+
+[ prototype pollution ] 
+ppscan
+
+[ crlf ]
+crlfuzz
+
+[ cors ]
+corsy?
 
 [ dns discovery ]
 puredns (masscan with wildcard support)
@@ -57,7 +67,6 @@ searchsploit
 [ considerations ]
 > arjun list/burp params from seclists are nice to use in x8
 > paramspider fetches results from webarchive, overlapping results, get gau[plus] and grep for "="
-
 
 [ extra ]
 
