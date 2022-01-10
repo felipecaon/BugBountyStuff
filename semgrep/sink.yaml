@@ -1,0 +1,40 @@
+rules:
+  - id: domxss-insertAdjacentHTML
+    languages:
+      - javascript
+      - typescript
+    message: Found dangerous HTML output
+    mode: taint
+    pattern-sources:
+      - pattern: document.location.search
+      - pattern: document.location.hash
+      - pattern: document.location.pathname
+      - pattern: document.location.href
+      - pattern: document.location
+      - pattern: window.location
+      - pattern: window.location.href
+      - pattern: window.location.search
+      - pattern: window.location.hash
+      - pattern: window.location.pathname
+      - pattern: document.URL
+      - pattern: document.documentURI
+      - pattern: document.baseURI
+      - pattern: document.cookie
+      - pattern: document.referrer
+    pattern-sinks:
+      - pattern: $X.insertAdjacentHTML(...)
+      - pattern: $X.innerHTML(...)
+      - pattern: $X.innerHTML = ...
+      - pattern: eval(...)
+      - pattern: execScript
+      - pattern: script.src = ...
+      - pattern: iframe.src = ...
+      - pattern: document.location = ...
+      - pattern: window.location = ...
+      - pattern: document.location.href = ...
+      - pattern: window.location.href = ...
+      - pattern: document.write(...)
+      - pattern: document.writeln(...)
+      - pattern: $X.outerHTML = ...
+      - pattern: $X.outerHTML(...)
+    severity: WARNING
