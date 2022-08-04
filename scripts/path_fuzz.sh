@@ -9,7 +9,7 @@ fi
 
 base=$(echo $1 | sed 's/http:\/\///g' | sed 's/https:\/\///g' | sed 's/\///g')
 
-ffuf -u $1/FUZZ -fw 0 -mc all -fs 0,1 -ac -w $2 -of json -o "paths/$base"
+ffuf -u $1/FUZZ -fw 0 -mc all -fs 0,1 -fc 404 -ac -w $2 -of json -o "paths/$base"
 
 cat "paths/$base" | jq '.results[] | .url + " Status:" + (.status|tostring) + " Length:" + (.length|tostring) + " Words:" + (.words|tostring)' | sed 's/"//g' >> "paths/${base}_found"
 

@@ -3,7 +3,7 @@ echo ">> Getting Subdomains..."
 amass enum -d $1 -o amass_$1.txt > /dev/null 2>&1
 echo "[+] Amass done"
 
-subfinder -silent -d $1 > subfinder_$1.txt
+subfinder -silent -all -d $1 > subfinder_$1.txt
 echo "[+] Subfinder done"
 
 findomain -t $1 -q > findomain_$1.txt
