@@ -67,4 +67,25 @@ go install github.com/ffuf/ffuf@lates
 printf "Gau:\n"
 go install github.com/lc/gau/v2/cmd/gau@latest
 
+printf "Anew\n"
+go install -v github.com/tomnomnom/anew@latest
+
+printf "Unfurl:\n"
+go install github.com/tomnomnom/unfurl@latest
+
+printf "Hakrawler:\n"
+go install github.com/hakluke/hakrawler@latest
+
+printf "MassDNS:\n"
+git clone https://github.com/blechschmidt/massdns $HOME/tools/massdns
+cd $HOME/tools/massdns && make && cp ./bin/massdns $HOME/bin
+
+printf "PureDNS:\n"
+go install github.com/d3mondev/puredns/v2@latest
+
+printf "nmap:\n"
+sudo apt install -y nmap
+
+printf "Resolvers:\n"
+git clone git@github.com:felipecaon/resolvers.git
 
