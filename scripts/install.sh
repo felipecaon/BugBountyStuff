@@ -40,6 +40,9 @@ printf "\n#########################\n\n"
 
 printf "[*] Setup Your Tools:\n"
 
+printf "Htop:\n"
+sudo apt install htop
+
 printf "Make & GCC:\n"
 sudo apt install -y make gcc
 
