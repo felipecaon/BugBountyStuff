@@ -35,10 +35,23 @@ printf "[+] Done"
 
 printf "\n#########################\n\n"
 
+printf "Update linux\n"
+sudo apt-get update
+
+printf "\n#########################\n\n"
+
 printf "[*] Setup Your Tools:\n"
 
 printf "Make & GCC:\n"
 sudo apt install -y make gcc
+
+printf "Chrome headless:\n"
+sudo apt install -y libappindicator1 fonts-liberation
+sudo apt install libnss3-dev libgdk-pixbuf2.0-dev libgtk-3-dev libxss-dev
+sudo apt --fix-broken install
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo dpkg -i google-chrome*.deb
+rm google-chrome*.deb
 
 printf "JQ:\n"
 sudo apt -y install jq
