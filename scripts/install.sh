@@ -7,7 +7,6 @@ printf "update and upgrade:\n"
 sudo apt update -y
 sudo apt upgrade -y
 
-
 printf "[+] Done"
 
 printf "\n#####################\n\n"
@@ -40,13 +39,25 @@ sudo apt-get update
 
 printf "\n#########################\n\n"
 
-printf "[*] Setup Your Tools:\n"
+printf "[*] Setup Linux Essential Tools:\n"
 
 printf "Htop:\n"
 sudo apt install htop
 
 printf "Make & GCC:\n"
 sudo apt install -y make gcc
+
+printf "Git:\n"
+sudo apt install git
+
+printf "Ruby:\n"
+sudo apt install ruby-full
+
+printf "Python3:\n"
+sudo apt install python3
+
+printf "Pip3:\n"
+sudo apt install python3-pip
 
 printf "Chrome headless:\n"
 sudo apt install -y libappindicator1 fonts-liberation
@@ -61,6 +72,9 @@ sudo apt -y install jq
 
 printf "Libpcap\n:"
 sudo apt install -y libpcap-dev
+
+printf "\n#########################\n\n"
+printf "[*] Setup Your Tools:\n"
 
 printf "SubFinder:\n"
 go install -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest
@@ -101,6 +115,13 @@ go install github.com/d3mondev/puredns/v2@latest
 
 printf "nmap:\n"
 sudo apt install -y nmap
+
+printf "godeclutter:\n"
+go install github.com/c3l3si4n/godeclutter@latest
+
+#wpscan
+#sqlmap
+#x8
 
 # printf "Resolvers:\n"
 # git clone git@github.com:felipecaon/resolvers.git
