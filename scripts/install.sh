@@ -1,11 +1,9 @@
 #!/bin/bash
-#
-# Bash script i use to install some hacking tools
-#
 
 printf "update and upgrade:\n"
 sudo apt update -y
 sudo apt upgrade -y
+sudo apt --fix-broken install
 
 printf "[+] Done"
 
@@ -22,7 +20,6 @@ sudo rm -rf /usr/local/go
 sudo tar -C /usr/local -xzf golang.tar.gz
 
 mkdir $HOME/bin
-mkdir $HOME/tools
 export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin
 
 echo 'export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin' >> $HOME/.bashrc
@@ -36,6 +33,9 @@ printf "[+] Done"
 printf "\n#########################\n\n"
 
 printf "[*] Setup Linux Essential Tools:\n"
+
+printf "Curl:\n"
+sudo apt install -y curl
 
 printf "Htop:\n"
 sudo apt install -y htop
@@ -55,16 +55,18 @@ sudo apt install -y python3-pip
 printf "Chrome headless:\n"
 sudo apt install -y libappindicator1 fonts-liberation
 sudo apt install -y libnss3-dev libgdk-pixbuf2.0-dev libgtk-3-dev libxss-dev
-sudo apt --fix-broken install
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg -i google-chrome*.deb
 rm google-chrome*.deb
 
 printf "JQ:\n"
-sudo apt -y install jq
+sudo apt install -y jq
 
 printf "Libpcap\n:"
 sudo apt install -y libpcap-dev
+
+printf "Libpcap\n:"
+sudo apt install -y libssl-dev
 
 printf "\n#########################\n\n"
 printf "[*] Setup Your Tools:\n"
@@ -97,11 +99,9 @@ printf "Hakrawler:\n"
 go install github.com/hakluke/hakrawler@latest
 
 printf "MassDNS:\n"
-git clone https://github.com/blechschmidt/massdns $HOME/tools/massdns
-cd $HOME/tools/massdns && make && cp ./bin/massdns $HOME/bin
-rm -rf $HOME/tools
-mv $HOME/bin/massdns /usr/local/bin
-rm -rf $HOME/bin
+git clone https://github.com/blechschmidt/massdns
+cd $HOME/massdns && make && sudo cp ./bin/massdns /usr/local/bin
+rm -rf $HOME/massdns
 
 printf "PureDNS:\n"
 go install github.com/d3mondev/puredns/v2@latest
@@ -109,13 +109,13 @@ go install github.com/d3mondev/puredns/v2@latest
 printf "nmap:\n"
 sudo apt install -y nmap
 
-printf "godeclutter:\n"
-go install github.com/c3l3si4n/godeclutter@latest
+printf "dnsx:\n"
+go install -v github.com/projectdiscovery/dnsx/cmd/dnsx@latest
+
+printf "gowtiness:\n"
+go install github.com/sensepost/gowitness@latest
 
 #wpscan
 #sqlmap
 #x8
-
-# printf "Resolvers:\n"
-# git clone git@github.com:felipecaon/resolvers.git
 
